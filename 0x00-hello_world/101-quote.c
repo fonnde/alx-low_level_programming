@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - A c program that prints a line to standard error
- * Return: 1 (success)
+ * main - prints exactly "and that piece of art is useful"
+ *
+ *   Return: Always 0 (success)
  */
 int main(void)
-{	fputs("and that piece of art is useful\" - Dora Korpar,
-	2015-10-19\n", stdout);
+{	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
