@@ -29,7 +29,7 @@ int _strlen_recursion(char *s)
 }
 
 /**
-* check if it is pal
+* check_pal - checks if it is pal
 * @s: string to check
 * @i: iterator
 * @len: length of the string
