@@ -1,17 +1,24 @@
 #include "main.h"
-
 /**
- * _isdigit - input
- *
- * Description: define if a character is a number
- * @c: charater
- * Return: 1 yes 0 no
+*_strcat - function that concatenates two strings.
+*@dest: pointer to destination string.
+*@src: pointer to source string.
+*
+*Return: pointer to destination string.
  */
-
-int _isdigit(int c)
+char *_strcat(char *dest, char *src)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+int length, j;
+
+length = 0;
+while (dest[length] != '\0')
+{
+length++;
+}
+for (j = 0; src[j] != '\0'; j++, length++)
+{
+dest[length] = src[j];
+}
+dest[length] = '\0';
+return (dest);
 }
