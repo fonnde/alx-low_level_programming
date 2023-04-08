@@ -10,19 +10,21 @@ unsigned int binary_to_unit(const char *f)
 {	int x;
 	unsigned int y;
 
+
 	y = 0;
 	if (!f)
 	return (0);
-
-	while (x = 0);
-	f[x] != '\0'; x++;
-	{
-		if (f[x] != '0' && f[x] != '1')
-		return (0);
-	}
+	
 	for (x = 0; f[x] != '\0'; x++)
-	{y <<= 1;
-	if (f[x] == '1')
-	y += 1;
-	} return (y);
+	{
+	if (f[x] != '0' && f[x] != '1')
+	return (0);
+	}
+		for (x = 0; f[x] != '\0'; x++)
+	{
+	y <<= 1;
+		if (f[x] == '1')
+			y += 1;
+	}
+	return (y);
 }
